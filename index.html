@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bling Boulevards — The Jewelry Marketplace</title>
+<meta name="description" content="Bling Boulevards is a multi-vendor marketplace for chains, rings, grillz, watches, and bridal jewelry. Independent jewelers, one boulevard. Founding vendor applications are open.">
+<link rel="canonical" href="https://blingboulevards.com/">
+<meta property="og:title" content="Bling Boulevards — the jewelry marketplace">
+<meta property="og:description" content="Chains, rings, grillz, watches, bridal. Independent jewelers on one boulevard — founding vendor applications open.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://blingboulevards.com/">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23F3DFA0'/%3E%3Cstop offset='.5' stop-color='%23BE9530'/%3E%3Cstop offset='1' stop-color='%238A6A1C'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='4' fill='%2315171C'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='17' fill='url(%23g)'%3EBB%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"JewelryStore","name":"Bling Boulevards","url":"https://blingboulevards.com/","description":"Multi-vendor jewelry marketplace for chains, rings, grillz, watches, and bridal pieces from independent jewelers.","image":"https://blingboulevards.com/","priceRange":"$$-$$$$"}
+</script>
+<style>
+:root{
+  --ink:#15171C; --concrete:#F1F2F4; --white:#FFFFFF;
+  --gold:#BE9530; --cobalt:#2F4BD8; --line:#D9DBE0; --mid:#5A5E68;
+  --disp:"Tenor Sans",Georgia,serif; --body:"Archivo",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--concrete);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+a{color:var(--cobalt)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+/* sticky top bar */
+.topbar{position:sticky;top:0;z-index:10;background:var(--ink);color:var(--white)}
+.topbar .wrap{display:flex;align-items:center;gap:20px;padding:12px 20px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;color:var(--white);text-decoration:none}
+.brand svg{display:block}
+.brand b{font-family:var(--disp);font-weight:400;font-size:1.25rem;letter-spacing:.04em}
+.search{flex:1;min-width:200px;display:flex}
+.search input{flex:1;border:1px solid #3a3e48;background:#1f222a;color:var(--white);padding:9px 14px;font:inherit;font-size:.95rem;border-radius:2px 0 0 2px}
+.search input::placeholder{color:#8e93a0}
+.search button{border:1px solid var(--gold);background:var(--gold);color:var(--ink);font-weight:700;padding:9px 16px;font:inherit;cursor:pointer;border-radius:0 2px 2px 0}
+.topbar nav a{color:#d8dae0;text-decoration:none;font-size:.92rem;margin-left:16px}
+.topbar nav a:hover{color:var(--gold)}
+/* hero */
+.hero{background:var(--white);border-bottom:4px solid var(--ink)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:58px;padding-bottom:50px}
+h1{font-family:var(--disp);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);line-height:1.08;letter-spacing:.01em}
+.hero p{margin-top:18px;max-width:52ch;font-size:1.1rem;color:#2c2f37}
+.chips{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap}
+.chips a{display:inline-block;border:1.5px solid var(--ink);color:var(--ink);text-decoration:none;padding:8px 16px;border-radius:999px;font-size:.93rem;font-weight:500}
+.chips a:hover{background:var(--ink);color:var(--gold)}
+.hero-art{justify-self:center}
+/* category grid */
+section{padding:58px 0}
+h2{font-family:var(--disp);font-weight:400;font-size:clamp(1.5rem,3vw,2.1rem);margin-bottom:8px}
+.sub{color:var(--mid);max-width:62ch;margin-bottom:28px}
+.cats{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.cat{background:var(--white);padding:26px 20px 22px;text-decoration:none;color:var(--ink)}
+.cat:hover{background:var(--ink);color:var(--white)}
+.cat:hover .cname{color:var(--gold)}
+.cat svg{display:block;margin-bottom:14px}
+.cname{font-family:var(--disp);font-size:1.05rem;display:block}
+.cmeta{font-size:.84rem;color:var(--mid);display:block;margin-top:4px}
+.cat:hover .cmeta{color:#aab0bc}
+/* vendors */
+.vendors{background:var(--ink);color:var(--white)}
+.vendors h2{color:var(--white)}
+.vendors .sub{color:#b7bbc4}
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.vtile{border:1px solid #343845;padding:24px;background:#1b1e25;display:flex;flex-direction:column;gap:10px}
+.vtile.open{border-style:dashed;border-color:var(--gold)}
+.vlabel{font-size:.78rem;font-weight:700;letter-spacing:.02em;color:var(--gold)}
+.vtile h3{font-family:var(--disp);font-weight:400;font-size:1.2rem}
+.vtile p{font-size:.93rem;color:#b7bbc4;flex:1}
+.vtile a{color:var(--gold);text-decoration:none;font-weight:600;font-size:.93rem}
+.vtile a:hover{text-decoration:underline}
+/* how it works */
+.how ol{counter-reset:step;list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:8px}
+.how li{counter-increment:step;border-top:3px solid var(--gold);padding-top:14px}
+.how li::before{content:counter(step) ".";font-family:var(--disp);font-size:1.5rem;display:block;margin-bottom:6px}
+.how b{display:block;margin-bottom:6px}
+.how li p{font-size:.95rem;color:#3a3e47}
+/* sell band + form */
+.sell{background:var(--white);border-top:4px solid var(--ink)}
+.sell .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.92rem;display:block;margin-bottom:5px}
+input,select,textarea{width:100%;padding:11px 12px;border:1.5px solid var(--ink);border-radius:2px;background:var(--white);font:inherit;font-size:.96rem}
+.btn{display:inline-block;background:var(--ink);color:var(--gold);border:0;padding:13px 26px;font:inherit;font-weight:700;cursor:pointer;border-radius:2px}
+.btn:hover{background:#000}
+.form-note{font-size:.88rem;color:var(--mid)}
+footer{background:var(--ink);color:#c6cad2;padding:40px 0 28px}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px}
+footer h3{font-family:var(--disp);font-weight:400;color:var(--white);margin-bottom:10px}
+footer a{color:#c6cad2;text-decoration:none;display:block;padding:3px 0;font-size:.93rem}
+footer a:hover{color:var(--gold)}
+.fineprint{grid-column:1/-1;border-top:1px solid #343845;margin-top:24px;padding-top:14px;font-size:.84rem;color:#8e93a0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:920px){
+  .hero .wrap,.sell .wrap{grid-template-columns:1fr}
+  .hero-art{display:none}
+  .cats{grid-template-columns:repeat(2,1fr)}
+  .vgrid,.how ol{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Bling Boulevards home">
+      <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="bbGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#F3DFA0"/><stop offset=".5" stop-color="#BE9530"/><stop offset="1" stop-color="#8A6A1C"/>
+          </linearGradient>
+        </defs>
+        <rect width="32" height="32" rx="4" fill="#0e1014" stroke="#343845" stroke-width="1"/>
+        <text x="16" y="22" text-anchor="middle" font-family="Tenor Sans,Georgia,serif" font-size="16" fill="url(#bbGold)" letter-spacing="0.5">BB</text>
+      </svg>
+      <b>Bling Boulevards</b>
+    </a>
+    <form class="search" role="search" action="#" onsubmit="event.preventDefault();">
+      <label for="q" style="position:absolute;left:-9999px">Search jewelry</label>
+      <input id="q" type="search" placeholder="Search chains, grillz, bridal sets… (search opens at launch)">
+      <button type="submit">Search</button>
+    </form>
+    <nav aria-label="Main">
+      <a href="#categories">Shop</a>
+      <a href="#vendors">Jewelers</a>
+      <a href="#sell">Sell on BB</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>Every block of the jewelry world, on one boulevard.</h1>
+      <p>Bling Boulevards is a marketplace where independent jewelers run their own storefronts — chains and pendants next to bridal sets, grillz next to watches. You deal with the jeweler who made the piece. We keep the street lit.</p>
+      <div class="chips">
+        <a href="#categories">Chains</a>
+        <a href="#categories">Rings</a>
+        <a href="#categories">Grillz</a>
+        <a href="#categories">Watches</a>
+        <a href="#categories">Bridal</a>
+      </div>
+    </div>
+    <svg class="hero-art" width="340" height="300" viewBox="0 0 340 300" role="img" aria-label="A brilliant-cut diamond suspended above a gold curb chain">
+      <defs>
+        <linearGradient id="dmTable" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ffffff"/><stop offset=".55" stop-color="#dfe9f5"/><stop offset="1" stop-color="#b9c9dd"/>
+        </linearGradient>
+        <linearGradient id="dmCrownL" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#f4f8fd"/><stop offset="1" stop-color="#9fb4cd"/>
+        </linearGradient>
+        <linearGradient id="dmCrownR" x1="1" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#c8d7e8"/><stop offset="1" stop-color="#7e96b4"/>
+        </linearGradient>
+        <linearGradient id="dmPavL" x1="0" y1="0" x2=".7" y2="1">
+          <stop offset="0" stop-color="#cfdded"/><stop offset=".6" stop-color="#8fa7c2"/><stop offset="1" stop-color="#5e7694"/>
+        </linearGradient>
+        <linearGradient id="dmPavR" x1="1" y1="0" x2=".3" y2="1">
+          <stop offset="0" stop-color="#eaf1f9"/><stop offset=".6" stop-color="#a7bcd4"/><stop offset="1" stop-color="#6d85a3"/>
+        </linearGradient>
+        <linearGradient id="dmPavC" x1=".5" y1="0" x2=".5" y2="1">
+          <stop offset="0" stop-color="#f7fafd"/><stop offset=".7" stop-color="#b3c6db"/><stop offset="1" stop-color="#87a0bc"/>
+        </linearGradient>
+        <linearGradient id="chGold" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#F6E3A3"/><stop offset=".45" stop-color="#C99F3C"/><stop offset=".8" stop-color="#8F6D1E"/><stop offset="1" stop-color="#6E5314"/>
+        </linearGradient>
+        <linearGradient id="chGoldIn" x1="0" y1="1" x2="0" y2="0">
+          <stop offset="0" stop-color="#F0D98F"/><stop offset=".6" stop-color="#A8832A"/><stop offset="1" stop-color="#7A5E18"/>
+        </linearGradient>
+        <radialGradient id="dmGlow" cx=".5" cy=".4" r=".6">
+          <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="softSh" x="-30%" y="-30%" width="160%" height="170%">
+          <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#15171C" flood-opacity=".28"/>
+        </filter>
+      </defs>
+      <!-- gold curb chain -->
+      <g filter="url(#softSh)">
+        <g stroke-linecap="round" fill="none">
+          <ellipse cx="60" cy="246" rx="27" ry="15" stroke="url(#chGold)" stroke-width="9"/>
+          <ellipse cx="60" cy="246" rx="27" ry="15" stroke="url(#chGoldIn)" stroke-width="3.5"/>
+          <ellipse cx="112" cy="246" rx="27" ry="15" stroke="url(#chGold)" stroke-width="9"/>
+          <ellipse cx="112" cy="246" rx="27" ry="15" stroke="url(#chGoldIn)" stroke-width="3.5"/>
+          <ellipse cx="164" cy="246" rx="27" ry="15" stroke="url(#chGold)" stroke-width="9"/>
+          <ellipse cx="164" cy="246" rx="27" ry="15" stroke="url(#chGoldIn)" stroke-width="3.5"/>
+          <ellipse cx="216" cy="246" rx="27" ry="15" stroke="url(#chGold)" stroke-width="9"/>
+          <ellipse cx="216" cy="246" rx="27" ry="15" stroke="url(#chGoldIn)" stroke-width="3.5"/>
+          <ellipse cx="268" cy="246" rx="27" ry="15" stroke="url(#chGold)" stroke-width="9"/>
+          <ellipse cx="268" cy="246" rx="27" ry="15" stroke="url(#chGoldIn)" stroke-width="3.5"/>
+        </g>
+        <!-- specular glints on links -->
+        <g stroke="#FFF6D9" stroke-width="2.4" stroke-linecap="round" fill="none" opacity=".85">
+          <path d="M42 235 q10 -6 24 -4"/><path d="M94 235 q10 -6 24 -4"/><path d="M146 235 q10 -6 24 -4"/><path d="M198 235 q10 -6 24 -4"/><path d="M250 235 q10 -6 24 -4"/>
+        </g>
+      </g>
+      <!-- brilliant-cut diamond -->
+      <g filter="url(#softSh)">
+        <!-- pavilion -->
+        <path d="M104 92 L137 92 L170 196 Z" fill="url(#dmPavL)"/>
+        <path d="M137 92 L203 92 L170 196 Z" fill="url(#dmPavC)"/>
+        <path d="M203 92 L236 92 L170 196 Z" fill="url(#dmPavR)"/>
+        <!-- crown -->
+        <path d="M104 92 L137 60 L137 92 Z" fill="url(#dmCrownR)"/>
+        <path d="M137 60 L170 92 L137 92 Z" fill="url(#dmCrownL)"/>
+        <path d="M137 60 L203 60 L170 92 Z" fill="url(#dmTable)"/>
+        <path d="M203 60 L203 92 L170 92 Z" fill="url(#dmCrownR)"/>
+        <path d="M203 60 L236 92 L203 92 Z" fill="url(#dmCrownL)"/>
+        <!-- table top -->
+        <path d="M137 60 L170 34 L203 60 Z" fill="url(#dmTable)"/>
+        <path d="M104 92 L137 60 L170 34 L143 76 Z" fill="url(#dmCrownL)" opacity=".55"/>
+        <path d="M236 92 L203 60 L170 34 L197 76 Z" fill="url(#dmCrownR)" opacity=".45"/>
+        <!-- facet edges -->
+        <g fill="none" stroke="#ffffff" stroke-width="1" opacity=".55">
+          <path d="M104 92 H236 M137 60 H203 M137 60 L137 92 M203 60 L203 92 M137 92 L170 196 L203 92 M170 34 L137 60 M170 34 L203 60 M170 92 L137 60 M170 92 L203 60"/>
+        </g>
+        <!-- internal refraction streaks -->
+        <path d="M150 100 L170 180 L160 104 Z" fill="#ffffff" opacity=".45"/>
+        <path d="M196 98 L178 160 L188 100 Z" fill="#ffffff" opacity=".3"/>
+        <!-- specular highlight -->
+        <ellipse cx="156" cy="52" rx="16" ry="7" fill="url(#dmGlow)"/>
+        <!-- sparkle -->
+        <g fill="#8fa7c2">
+          <path d="M226 42 l2.4 7 7 2.4 -7 2.4 -2.4 7 -2.4 -7 -7 -2.4 7 -2.4 Z"/>
+          <path d="M112 36 l1.7 5 5 1.7 -5 1.7 -1.7 5 -1.7 -5 -5 -1.7 5 -1.7 Z" opacity=".8"/>
+        </g>
+      </g>
+    </svg>
+  </div>
+</div>
+
+<section id="categories">
+  <div class="wrap">
+    <h2>Browse by category</h2>
+    <p class="sub">Five lanes to start. Each category opens with the jewelers who stock it — listings appear as founding vendors onboard their inventories.</p>
+    <div class="cats">
+      <a class="cat" href="#sell">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><ellipse cx="12" cy="20" rx="8" ry="5"/><ellipse cx="28" cy="20" rx="8" ry="5"/><path d="M20 18v4"/></svg>
+        <span class="cname">Chains</span><span class="cmeta">Cuban, rope, tennis, Franco</span>
+      </a>
+      <a class="cat" href="#sell">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="20" cy="25" r="10"/><path d="M14 13l6-7 6 7-6 4z"/></svg>
+        <span class="cname">Rings</span><span class="cmeta">Signets, solitaires, stacks</span>
+      </a>
+      <a class="cat" href="#sell">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 16q14-10 28 0v6q0 6-5 6t-4-5q-2 3-5 3t-5-3q1 5-4 5t-5-6z"/></svg>
+        <span class="cname">Grillz</span><span class="cmeta">Custom-fit, permanent-look</span>
+      </a>
+      <a class="cat" href="#sell">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="20" cy="20" r="11"/><path d="M20 13v7l5 3M15 4h10M15 36h10"/></svg>
+        <span class="cname">Watches</span><span class="cmeta">Iced bezels, bust-downs</span>
+      </a>
+      <a class="cat" href="#sell">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="15" cy="23" r="8"/><circle cx="25" cy="23" r="8"/><path d="M12 12l3-5 3 5M22 12l3-5 3 5"/></svg>
+        <span class="cname">Bridal</span><span class="cmeta">Engagement, bands, sets</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="vendors" class="vendors">
+  <div class="wrap">
+    <h2>The founding block</h2>
+    <p class="sub">We're opening with a small, hand-picked row of independent jewelers rather than an endless scroll. These storefront slots are being filled now — every vendor is verified for business registration and bench experience before their shop goes live.</p>
+    <div class="vgrid">
+      <div class="vtile open">
+        <span class="vlabel">Founding slot — chains &amp; pendants</span>
+        <h3>Your storefront here</h3>
+        <p>A chain specialist with their own casting or links sourced from documented refiners. Storefront, order inbox, and payout tools included.</p>
+        <a href="#sell">Apply as a founding jeweler</a>
+      </div>
+      <div class="vtile open">
+        <span class="vlabel">Founding slot — grillz</span>
+        <h3>Your storefront here</h3>
+        <p>A grillz maker who takes molds and turns them around in-house. We handle the marketplace; you keep your craft and your customer.</p>
+        <a href="#sell">Apply as a founding jeweler</a>
+      </div>
+      <div class="vtile open">
+        <span class="vlabel">Founding slot — bridal</span>
+        <h3>Your storefront here</h3>
+        <p>A bridal bench with GIA-graded center stones and clear certificates. Buyers see your grading paperwork before they buy.</p>
+        <a href="#sell">Apply as a founding jeweler</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="how">
+  <div class="wrap">
+    <h2>How the boulevard works</h2>
+    <ol>
+      <li><b>Jewelers open storefronts</b><p>Each vendor lists their own pieces, prices, and turnaround times. No anonymous drop-shippers — every shop is a named, verified jeweler.</p></li>
+      <li><b>You buy from the maker</b><p>Orders and custom requests go straight to the jeweler's bench. Questions about karat, stones, or sizing are answered by the person who does the work.</p></li>
+      <li><b>We hold the standard</b><p>Metal purity and stone descriptions must match documentation. A shop that misdescribes a piece loses its spot on the boulevard.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="sell" class="sell">
+  <div class="wrap">
+    <div>
+      <h2>Sell on Bling Boulevards</h2>
+      <p class="sub" style="margin-bottom:14px">Founding vendors set the tone for the whole marketplace, so we're choosy. If you make or finish jewelry yourself — chains, grillz, bridal, custom pieces — tell us about your bench and we'll be in touch when onboarding opens.</p>
+      <p style="color:var(--mid);font-size:.95rem;max-width:52ch">Shopping instead? The same form works — pick "I want to buy" and we'll let you know the day the first storefronts open.</p>
+    </div>
+    <form action="#" method="post" onsubmit="event.preventDefault();this.querySelector('.form-note').textContent='Thanks — applications are reviewed when vendor onboarding opens. Nothing you typed left your browser.';">
+      <div>
+        <label for="who">I'm interested as</label>
+        <select id="who" name="who"><option>A jeweler who wants a storefront</option><option>I want to buy</option></select>
+      </div>
+      <div>
+        <label for="name">Name or shop name</label>
+        <input id="name" name="name" required autocomplete="organization">
+      </div>
+      <div>
+        <label for="lane">Main category</label>
+        <select id="lane" name="lane"><option>Chains</option><option>Rings</option><option>Grillz</option><option>Watches</option><option>Bridal</option></select>
+      </div>
+      <div>
+        <label for="bench">Tell us about your work (optional)</label>
+        <textarea id="bench" name="bench" rows="4" placeholder="e.g., I cast my own 10k Cuban links and do all finishing in-house…"></textarea>
+      </div>
+      <button class="btn" type="submit">Join the waitlist</button>
+      <p class="form-note">Submissions open at launch — nothing you type here leaves your browser yet.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h3>Bling Boulevards</h3>
+      <p style="max-width:40ch;font-size:.93rem">A multi-vendor jewelry marketplace: independent jewelers, verified benches, one boulevard. Opening soon — storefront applications in review.</p>
+    </div>
+    <div>
+      <h3>Marketplace</h3>
+      <a href="#categories">Categories</a>
+      <a href="#vendors">Founding jewelers</a>
+      <a href="#sell">Sell on BB</a>
+    </div>
+    <div>
+      <h3>Site</h3>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </div>
+    <div class="fineprint">
+      <span>© 2026 Bling Boulevards. All rights reserved.</span>
+      <span>The marketplace is pre-launch; vendor tiles show open founding slots, not active shops.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
